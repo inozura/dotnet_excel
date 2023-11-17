@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <table id="example" class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Order</th>
+                <th>Price</th>
+                <th>Discount Price</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+        new DataTable('#example', {
+            ajax: {
+                url: '/purchase/Data',
+                dataSrc: '',
+                complete: (data) => {
+                    console.log(data['responseJSON']);
+                },
+            },
+            searchPanes: {
+                viewCount: false
+            },
+            dom: 'frtip',
+            columns: [
+                {
+                    data: "image",
+                    render: (data) => `<img src=${data} width="100px" class="rounded">`
+                },
+                { data: 'name' },
+                { data: 'orderDate', render: (data) => moment(data).format("MMM Do YYYY") },
+                { data: 'price', render: (data) => `${data.toLocaleString("en-MY", {style: "currency", currency: "MYR" })}` },
+                { data: 'discountedPrice', render: (data) => `RM${data}` },
+            ]
+        });
+    </script>
+}

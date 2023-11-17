@@ -1,0 +1,141 @@
+@{
+  ViewData["Title"] = "Purchase Page";
+}
+
+<div class="d-flex flex-row align-items-center justify-content-between mt-5 mb-3">
+  <h5>My Purchase</h5>
+  <div class="form-group has-search d-none d-md-block">
+    <span class="fa fa-search form-control-feedback"></span>
+    <input type="text" class="form-control w-100" placeholder="Search Orders to Receive">
+  </div>
+</div>
+
+<ul class="nav nav-tabs justify-content-between mb-2">
+  <li class="nav-item flex-auto text-center">
+    <a class="nav-link" href="#">To Pay</a>
+  </li>
+  <li class="nav-item flex-auto text-center">
+    <a class="nav-link active" href="#">To Receive</a>
+  </li>
+  <li class="nav-item flex-auto text-center">
+    <a class="nav-link" href="#">Completed</a>
+  </li>
+  <li class="nav-item flex-auto text-center">
+    <a class="nav-link" href="#">Refund</a>
+  </li>
+</ul>
+<div class="form-group has-search d-block d-md-none h-100">
+  <span class="fa fa-search form-control-feedback"></span>
+  <input type="text" class="form-control" placeholder="Search Orders to Receive">
+</div>
+
+<div id="card-grid" class="d-flex flex-column py-3">
+  <div class="d-flex flex-row justify-content-between align-items-center mb-1">
+    <a href="#" class="text-deco-none text-black fw-bolder">Vodus Store<i class="fa-solid fa-chevron-right ms-2"></i></a>
+    <span>Order Date: 2 Sep 2022</span>
+  </div>
+  <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+    <div class="d-flex flex-row align-items-center">
+      <img src="https://vouponlive.blob.core.windows.net/products/216/images/small_01_6cd6079e-5bf5-4965-b488-f31e5e3624c3.jpeg" alt="picture product" width="100px">
+      <div class="d-flex flex-column flex-md-row align-items-md-center ms-4 ms-lg-5">
+        <div class="d-flex flex-row align-items-center">
+          <div>
+            <span class="d-block archiveText text-secondary fw-bolder mb-1 w-200px w-md-250px">Clarifying Graphene Sheet Mask</span>
+            <select class="form-select form-select-remote d-block" aria-label="Default select example">
+              <option selected>RM5 DISCOUNT (50VPoints)</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <span class="d-block text-secondary">Variation: Black, XL</span>
+          </div>
+          <span class="border rounded fw-bolder py-1 px-2 ms-3 ms-lg-3">x2</span>
+        </div>
+        <div class="d-flex flex-row align-items-center ms-md-2 ms-lg-3">
+          <span class="text-secondary text-decoration-line-through fw-bolder">RM10.00</span>
+          <span class="fw-bolder ms-1">RM5.00</span>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-sm btn-orange fst-italic h-100 rounded-pill px-3 ms-auto w-max-content mt-2 mt-md-0">Pending Seller<i class="fa-solid fa-chevron-right ms-2"></i></button>
+  </div>
+</div>
+<div id="card-grid" class="d-flex flex-column py-3">
+  <div class="d-flex flex-row justify-content-between align-items-center mb-1">
+    <a href="#" class="text-deco-none text-black fw-bolder">Vodus Store<i class="fa-solid fa-chevron-right ms-2"></i></a>
+    <span>Order Date: 2 Sep 2022</span>
+  </div>
+  <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+    <div class="d-flex flex-row align-items-center">
+      <img src="https://vouponlive.blob.core.windows.net/products/568/images/small_01_6d9ea09c-7a44-451d-a651-05c8ac00527b.jpeg" alt="picture product" width="100px">
+      <div class="d-flex flex-column flex-md-row align-items-md-center ms-4 ms-lg-5">
+        <div class="d-flex flex-row align-items-center">
+          <div>
+            <span class="d-block archiveText text-secondary fw-bolder mb-1 w-200px w-md-250px">Opal + Energy Balancing Cream 50ml</span>
+            <select class="form-select form-select-remote d-block" aria-label="Default select example">
+              <option selected>RM5 DISCOUNT (50VPoints)</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <span class="d-block text-secondary">Variation: Black, XL</span>
+          </div>
+          <span class="border rounded fw-bolder py-1 px-2 ms-3 ms-lg-3">x1</span>
+        </div>
+        <div class="d-flex flex-row align-items-center ms-md-2 ms-lg-3">
+          <span class="text-secondary text-decoration-line-through fw-bolder">RM32.00</span>
+          <span class="fw-bolder ms-1">RM27.00</span>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-sm btn-aqua fst-italic h-100 rounded-pill px-3 ms-auto w-max-content mt-2 mt-md-0">Delivery is Underway<i class="fa-solid fa-chevron-right ms-2"></i></button>
+  </div>
+</div>
+<div id="card-grid" class="d-flex flex-column py-3">
+  <div class="d-flex flex-row justify-content-between align-items-center mb-1">
+    <a href="#" class="text-deco-none text-black fw-bolder">Merchant Store<i class="fa-solid fa-chevron-right ms-2"></i></a>
+    <span>Order Date: 2 Sep 2022</span>
+  </div>
+  <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+    <div class="d-flex flex-row align-items-center">
+      <img src="https://vouponlive.blob.core.windows.net/products/560/images/small_0_0a7368c6-19b6-43c6-a5c5-fee0592af150.jpeg" alt="picture product" width="100px">
+      <div class="d-flex flex-column flex-md-row align-items-md-center ms-4 ms-lg-5">
+        <div class="d-flex flex-row align-items-center">
+          <div>
+            <span class="d-block archiveText text-secondary fw-bolder mb-1 w-200px w-md-250px">NEWGENE COVID-19 Home Self Test Rapid Antigen Kit (RTK) (Sputum/Saliva - 2in1)</span>
+            <select class="form-select form-select-remote d-block" aria-label="Default select example">
+              <option selected>RM5 DISCOUNT (50VPoints)</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <span class="d-block text-secondary">Variation: Black, XL</span>
+          </div>
+          <span class="border rounded fw-bolder py-1 px-2 ms-3 ms-lg-3">x1</span>
+        </div>
+        <div class="d-flex flex-row align-items-center ms-md-2 ms-lg-3">
+          <span class="text-secondary text-decoration-line-through fw-bolder">RM10.00</span>
+          <span class="fw-bolder ms-1">RM5.00</span>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-sm btn-aqua fst-italic h-100 rounded-pill px-3 ms-auto w-max-content mt-2 mt-md-0">Delivery is Underway<i class="fa-solid fa-chevron-right ms-2"></i></button>
+  </div>
+</div>
+
+
+@section Scripts {
+  <script>
+    $.ajax({
+      url: '/purchase/data',
+      type: 'GET',
+      dataType: 'json',
+      success: function (data) {
+        // Check data is not empty
+        if (data.length > 0) {
+          console.log(data);
+        }
+      },
+    })
+  </script>
+}
