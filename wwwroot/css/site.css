@@ -16,6 +16,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+.wrapper-table {
+  overflow-x: scroll;
+}
 .has-search {
   width: 300px;
 }

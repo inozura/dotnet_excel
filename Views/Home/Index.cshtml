@@ -4,22 +4,24 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <table id="example" class="table table-striped" style="width:100%">
-        <thead>
-            <tr>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Order</th>
-                <th>Price</th>
-                <th>Discount Price</th>
-            </tr>
-        </thead>
-    </table>
+    <div class="wrapper-table">
+        <table id="table-product" class="table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Order</th>
+                    <th>Price</th>
+                    <th>Discount Price</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
 </div>
 
 @section Scripts {
     <script>
-        new DataTable('#example', {
+        new DataTable('#table-product', {
             ajax: {
                 url: '/purchase/Data',
                 dataSrc: '',
